@@ -1,0 +1,15 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Backend.Model
+{
+    public class Category
+    {
+        [Key]
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Category name is required")]
+        public string Name { get; set; } = string.Empty;
+
+        public ICollection<ProductCategory> ProductCategories { get; set; } = new List<ProductCategory>();
+    }
+}
