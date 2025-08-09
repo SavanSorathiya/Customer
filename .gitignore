@@ -1,0 +1,24 @@
+# Ignore Visual Studio temp folder
+.vs/
+
+# Ignore build outputs
+**/bin/
+**/obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore logs
+*.log
+
+# Ignore React dependencies
+customers-ui/node_modules/
+customers-ui/build/
+
+# Ignore env files
+customers-ui/.env
+
+# OS junk
+Thumbs.db
+.DS_Store
